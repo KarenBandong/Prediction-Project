@@ -1,6 +1,7 @@
 package com.LickingHeights;
 
 import java.sql.SQLOutput;
+import java.time.Year;
 import java.util.Scanner;
 
 public class Main {
@@ -28,7 +29,8 @@ public class Main {
             year=  keyboard.nextInt();
 
             daysofmonth(month);
-           
+            dayoftheweek(day, month, year);
+
     }
     }
       public static String daysofmonth(int month){
@@ -59,8 +61,37 @@ public class Main {
             case 12: monthString= "There are 30 days in December";
                 break;
         }
-
+        System.out.println(monthString);
         return (monthString);
+      }
+      public static String dayoftheweek(int day, int month, int year){
+        String daysString="";
+        int dayoftheweek;
+       int modYear= year%100;
+        int zeroYear= year/100;
+          dayoftheweek = (day + ((13*(month + 1))/5) + modYear + (modYear/4) + (zeroYear/4) - (2*zeroYear))%7;
+
+        switch (dayoftheweek){
+
+            case 0: daysString="Saturday";
+            break;
+            case 1: daysString="Sunday";
+            break;
+            case 2: daysString="Monday";
+                break;
+            case 3: daysString="Tuesday";
+                break;
+            case 4: daysString="Wednesday";
+                break;
+            case 5: daysString="Thursday";
+                break;
+            case 6: daysString="Friday";
+                break;
+        }
+          System.out.println(daysString);
+          System.out.println(dayoftheweek);
+        return (daysString);
+
       }
 }
 
