@@ -69,7 +69,8 @@ public class Main {
         int dayoftheweek;
        int modYear= year%100;
         int zeroYear= year/100;
-          dayoftheweek = (day + ((13*(month + 1))/5) + modYear + (modYear/4) + (zeroYear/4) - (2*zeroYear))%7;
+          dayoftheweek = day + 13*(month+1)/5 + modYear + modYear/4 + zeroYear/4 + 5*zeroYear;
+          dayoftheweek= dayoftheweek%7;
 
         switch (dayoftheweek){
 
@@ -89,7 +90,7 @@ public class Main {
                 break;
         }
           System.out.println(daysString);
-          System.out.println(dayoftheweek);
+
         return (daysString);
 
       }
