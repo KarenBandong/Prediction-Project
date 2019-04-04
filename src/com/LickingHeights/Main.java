@@ -36,29 +36,29 @@ public class Main {
       public static String daysofmonth(int month){
         String monthString="";
         switch (month){
-            case 1: monthString= "There are 31 days in January";
+            case 1: monthString= "THERE ARE 31 DAYS IN JANUARY";
                 break;
-            case 2: monthString= "There are either 28 days or 29 days in February";
+            case 2: monthString= "THERE ARE EITHER 28 OR 29 DAYS IN FEBRUARY";
                 break;
-            case 3: monthString= "There are 31 days in March";
+            case 3: monthString= "THERE ARE 31 DAYS IN MARCH";
                 break;
-            case 4: monthString= "There are 30 days in April";
+            case 4: monthString= "THERE ARE 30 DAYS IN APRIL";
                 break;
-            case 5: monthString= "There are 31 days in May";
+            case 5: monthString= "THERE ARE 31 DAYS IN MAY";
                 break;
-            case 6: monthString= "There are 30 days in June";
+            case 6: monthString= "THERE ARE 30 DAYS IN JUNE";
                 break;
-            case 7: monthString= "There are 31 days in July";
+            case 7: monthString= "THERE ARE 31 DAYS IN JULY";
                 break;
-            case 8: monthString= "There are 30 days in August";
+            case 8: monthString= "THERE ARE 30 DAYS IN AUGUST";
                 break;
-            case 9: monthString= "There are 31 days in September";
+            case 9: monthString= "THERE ARE 31 DAYS IN SEPTEMBER";
                 break;
-            case 10: monthString= "There are 30 days in October";
+            case 10: monthString= "THERE ARE 30 DAYS IN OCTOBER";
                 break;
-            case 11: monthString= "There are 31 days in November";
+            case 11: monthString= "THERE ARE 31 DAYS IN NOVEMBER";
                 break;
-            case 12: monthString= "There are 30 days in December";
+            case 12: monthString= "THERE ARE 30 DAYS IN DECEMBER";
                 break;
         }
         System.out.println(monthString);
