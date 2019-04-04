@@ -74,19 +74,19 @@ public class Main {
 
         switch (dayoftheweek){
 
-            case 0: daysString="Saturday";
+            case 0: daysString="SATURDAY'S CHILD WORKS HARD FOR A LIVING";
             break;
             case 1: daysString="Sunday";
             break;
-            case 2: daysString="Monday";
+            case 2: daysString="MONDAY'S CHILD IS FAIR OF FACE";
                 break;
-            case 3: daysString="Tuesday";
+            case 3: daysString="TUESDAY'S CHILD IS FULL OF GRACE";
                 break;
-            case 4: daysString="Wednesday";
+            case 4: daysString="WEDNESDAY'S CHILD IF FULL OF WOE";
                 break;
-            case 5: daysString="Thursday";
+            case 5: daysString="THURSDAY'S CHILD HAS FAR TO GO.";
                 break;
-            case 6: daysString="Friday";
+            case 6: daysString="FRIDAY'S CHILD IS LOVING AND GIVING";
                 break;
         }
           System.out.println(daysString);
