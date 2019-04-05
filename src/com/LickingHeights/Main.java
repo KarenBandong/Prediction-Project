@@ -30,6 +30,7 @@ public class Main {
 
             daysofmonth(month);
             dayoftheweek(day, month, year);
+            poemline(day);
 
     }
     }
@@ -94,7 +95,29 @@ public class Main {
         return (daysString);
 
       }
-      public static String
+      public static String poemline (int day){
+        String poemString= "";
+
+        switch (day){
+            case 0: poemString= "Child that works hard for a living";
+            break;
+            case 1: poemString= "Is fair and wise and good in every way.";
+            break;
+            case 2: poemString= "child is fair of face";
+            break;
+            case 3: poemString= "child is full of grace";
+            break;
+            case 4: poemString= "child is full of woe";
+            break;
+            case 5: poemString= "child has far way to go";
+            break;
+            case 6: poemString= "Child is  loving and giving";
+            break;
+        }
+
+          System.out.println(poemString);
+        return (poemString);
+      }
 }
 
 
